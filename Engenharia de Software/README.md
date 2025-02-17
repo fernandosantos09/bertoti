@@ -45,5 +45,20 @@ How an organization makes decisions, based on the lessons of Time and Change and
 
 Nesse trecho o autor resalva a questão de Engenharia de Software ser um método, principalmente ao colocar 3 princípios fundamentais para organizações de software  "designing, architecting and writing", sendo projetando, arquitetura (ou arquitetando) e escrita (ou escrevendo), entre outros tópicos entendendo que seu código passa por adaptações no futuro então a tendência tem que ser estruturar prevendo isso, além de "Scale and Growth", entendendo que como uma organização com o tempo precisará tambem se adaptar.
 
+## Texto 3
+
+### Trades-offs 
+
+As trades-offs, são trocas ou compensações de linguagens, métodos de trabalhos, dentre várias formas.
+
+#### Exemplo 1:
+Python usa uma linguagem simples de alto nível, bem próximo ao ser humano, logo mais lenta, então Python acaba cedendo sua velocidade em troca de ser mais simples, sendo mais desejado por programadores iniciantes, porem um exemplo de compensação usado em aula foi as IAs usadas em Python, que utiliza C em parte para conseguir velocidade e compilar em uma maior velocidade.
+
+#### Exemplo 2:
+Usado agora na aula de 17/02/2025 foi a JVM, onde se sacrifica parte da velocidade em troca de poder ser mais compatível com vários sistemas, mas é um bom trade-off visto que isso garante vasta vantagem a linguagem.
+
+#### Exemplo 3:
+
+
 
 
