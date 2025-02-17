@@ -43,6 +43,7 @@ Trade-offs and Costs
 
 How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth
 
-Nesse trecho o autor resalva a questão de Engenharia de Software ser um método, principalmente ao colocar 3 princípios fundamentais para organizações de software
+Nesse trecho o autor resalva a questão de Engenharia de Software ser um método, principalmente ao colocar 3 princípios fundamentais para organizações de software  "designing, architecting and writing", sendo projetando, arquitetura (ou arquitetando) e escrita (ou escrevendo), entre outros tópicos entendendo que seu código passa por adaptações no futuro então a tendência tem que ser estruturar prevendo isso, além de "Scale and Growth", entendendo que como uma organização com o tempo precisará tambem se adaptar.
+
 
 
