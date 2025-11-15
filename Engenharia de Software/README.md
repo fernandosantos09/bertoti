@@ -1,35 +1,43 @@
-1. 🔍 Atividade 1: Definição de Engenharia de Software (Texto 1)
+## 1. 🔍 Atividade 1: Definição de Engenharia de Software (Texto 1)
+
 O texto busca estabelecer a identidade da Engenharia de Software, diferenciando-a de Programação e Ciência da Computação.
 
 Conceito	Foco Principal	Implicação
+
 Programação	O ato de escrever código.	Atividade prática, frequentemente associada a estudantes.
+
 Engenharia de Software	Aplicação de conhecimento teórico para construir algo real e preciso.	Exige práticas rigorosas e métodos, similar a outras engenharias, para garantir confiabilidade.
 
 Exportar para as Planilhas
 
-2. 📈 Atividade 2: Programação Integrada ao Longo do Tempo (Texto 2)
+## 2. 📈 Atividade 2: Programação Integrada ao Longo do Tempo (Texto 2)
+
 Engenharia de Software é definida como "programming integrated over time" (programação integrada ao longo do tempo), focando na sustentabilidade do código no longo prazo.
 
 📌 Princípios Fundamentais para Organizações de Software
+
 Time and Change: Adaptar o código ao longo de seu ciclo de vida.
 
 Scale and Growth: Adaptar a organização à medida que o software cresce.
 
 Trade-offs and Costs: Guia para a tomada de decisões de arquitetura e design.
 
-3. ⚖️ Atividade 3: Trade-offs (Texto 3)
+## 3. ⚖️ Atividade 3: Trade-offs (Texto 3)
+
 Trade-offs são compensações nas escolhas técnicas, onde um benefício é adquirido mediante o sacrifício (cedência) de outra característica.
 
 Exemplo (Python): Troca-se velocidade por simplicidade e legibilidade.
 
 Exemplo (JVM): Sacrifica-se parte da velocidade por compatibilidade com múltiplos sistemas (portabilidade).
 
-4. 📐 Atividade 4: Classes UML
+## 4. 📐 Atividade 4: Classes UML
+
 O diagrama ilustra a estrutura de classes e seus relacionamentos.
 
-<p align="center"> <img src="imagem/uml.png" width="800" height="800"> </p>
+<p align="center"> <img src="https://github.com/fernandosantos09/bertoti/blob/main/imagem/uml.png" width="800" height="800"> </p>
 
-5. 💻 Atividade 5: Código-Fonte Java (Loja)
+##5. 💻 Atividade 5: Código-Fonte Java (Loja)
+
 Esta seção apresenta as classes principais Cliente e Loja, juntamente com um teste unitário inicial.
 
 Cliente.java
@@ -116,7 +124,9 @@ class Teste {
         assertEquals(clientesEncontrados.get(0).getCpf(), "987654321");
     }
 }
-6. ✅ Atividade 6: Testes Automatizados (JUnit)
+
+## 6. ✅ Atividade 6: Testes Automatizados (JUnit)
+
 Esta seção detalha os testes unitários mais robustos usando JUnit, cobrindo as classes Cliente e Loja.
 
 TesteCliente.java
@@ -217,7 +227,9 @@ class Testee {
         assertTrue(clientesEncontrados.isEmpty(), "Não deve encontrar cliente com o nome José.");
     }
 }
-7. 📚 Atividade 7: Java e Integração SQLite (Biblioteca)
+
+## 7. 📚 Atividade 7: Java e Integração SQLite (Biblioteca)
+
 Demonstração de persistência de dados utilizando o SQLite via JDBC.
 
 Aluno.java
@@ -472,7 +484,9 @@ public class Usuario {
     @Override
     public String toString() { return "Usuario{nome='" + nome + "'}"; }
 }
-8. 🤖 Atividade 8: Usando Ollama (Cliente HTTP em Java)
+
+## 8. 🤖 Atividade 8: Usando Ollama (Cliente HTTP em Java)
+
 Esta seção demonstra o uso de um cliente HTTP em Java para interagir diretamente com a API do servidor Ollama, que é usado para executar modelos de linguagem (LLMs) localmente.
 
 Ollama.java
