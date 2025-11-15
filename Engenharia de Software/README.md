@@ -36,16 +36,15 @@ O diagrama ilustra a estrutura de classes e seus relacionamentos.
 
 <p align="center"> <img src="https://github.com/fernandosantos09/bertoti/blob/main/imagem/uml.png" width="800" height="800"> </p>
 
-##5. 💻 Atividade 5: Código-Fonte Java (Loja)
+
+## 5. 💻 Atividade 5: Código-Fonte Java (Loja)
 
 Esta seção apresenta as classes principais Cliente e Loja, juntamente com um teste unitário inicial.
 
-Cliente.java
-Java
-
-package loja;
-
+# Cliente.java
+<pre><code class="language-java">
 public class Cliente {
+
     private String nome;
     private String cpf;
 
@@ -69,13 +68,14 @@ public class Cliente {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-}
-Loja.java
-Java
+} 
+</code></pre>
 
-package loja;
+# Loja.java
+<pre><code class="language-java">
 
 import java.util.LinkedList;
+
 import java.util.List;
 
 public class Loja {
@@ -101,10 +101,11 @@ public class Loja {
         return encontrados;
     }
 }
-Teste.java (Teste Simples de Loja)
-Java
+</code></pre>
 
-package loja;
+# Teste.java (Teste Simples de Loja)
+<pre><code class="language-java">
+package org.atividades.atividade5;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
@@ -113,17 +114,19 @@ import org.junit.jupiter.api.Test;
 class Teste {
 
     @Test
+
     void test() {
         Loja loja = new Loja();
 
-        loja.addCliente(new Cliente("Carlos", "987654321"));
+        loja.addCliente(new Cliente("Fernando", "12988904750"));
 
         assertEquals(loja.getClientes().size(), 1);
 
-        List<Cliente> clientesEncontrados = loja.buscarClienteNome("Carlos");
-        assertEquals(clientesEncontrados.get(0).getCpf(), "987654321");
+        List<Cliente> clientesEncontrados = loja.buscarClienteNome("Fernando");
+        assertEquals(clientesEncontrados.get(0).getCpf(), "0000000000");
     }
 }
+</code></pre>
 
 ## 6. ✅ Atividade 6: Testes Automatizados (JUnit)
 
