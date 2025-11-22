@@ -132,11 +132,9 @@ class Teste {
 
 Esta seção detalha os testes unitários mais robustos usando JUnit, cobrindo as classes Cliente e Loja.
 
-TesteCliente.java
-Java
+# TesteCliente.java
 
-package loja;
-
+<pre><code class="language-java">
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -163,11 +161,11 @@ public class TesteCliente {
         assertEquals("987.654.321-00", cliente.getCpf());
     }
 }
-TesteLoja.java
-Java
+</code></pre>
 
-package loja;
+# TesteLoja.java
 
+<pre><code class="language-java">
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -194,11 +192,11 @@ public class TesteLoja {
         assertEquals("987.654.321-00", cliente.getCpf());
     }
 }
-Testee.java (Testes de Adição e Busca na Loja)
-Java
+</code></pre>
 
-package loja;
+# Teste.java (Testes de Adição e Busca na Loja)
 
+<pre><code class="language-java">
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -209,7 +207,7 @@ class Testee {
     void testAdicionarEBuscarCliente() {
         Loja loja = new Loja();
 
-        loja.addCliente(new Cliente("Carlos", "987654321"));
+        loja.addCliente(new Cliente("Fernando", "12988904750"));
 
         assertEquals(1, loja.getClientes().size(), "A loja deve conter 1 cliente após adicionar.");
 
@@ -230,13 +228,15 @@ class Testee {
         assertTrue(clientesEncontrados.isEmpty(), "Não deve encontrar cliente com o nome José.");
     }
 }
+</code></pre>
 
 ## 7. 📚 Atividade 7: Java e Integração SQLite (Biblioteca)
 
 Demonstração de persistência de dados utilizando o SQLite via JDBC.
 
-Aluno.java
-Java
+## Aluno.java
+
+<pre><code class="language-java">
 
 package com.example.biblioteca;
 
@@ -262,8 +262,13 @@ public class Aluno {
         return "Aluno{nome='" + nome + "', ra='" + ra + "'}";
     }
 }
-Biblioteca.java
-Java
+
+</code></pre>
+
+
+## Biblioteca.java
+
+<pre><code class="language-java">
 
 package com.example.biblioteca;
 
@@ -282,8 +287,12 @@ public class Biblioteca {
         return Collections.unmodifiableList(livros);
     }
 }
-Database.java (Acesso ao SQLite)
-Java
+
+</code></pre>
+
+## Database.java (Acesso ao SQLite)
+
+<pre><code class="language-java">
 
 package com.example.biblioteca;
 
@@ -359,8 +368,12 @@ public class Database {
         return out;
     }
 }
-Livro.java
-Java
+
+</code></pre>
+
+## Livro.java
+
+<pre><code class="language-java">
 
 package com.example.biblioteca;
 
@@ -389,9 +402,12 @@ public class Livro {
         return "Livro{id=" + id + ", titulo='" + titulo + "', autor='" + autor + "'}";
     }
 }
-Main.java (Demonstração)
-Java
 
+</code></pre>
+
+## Main.java (Demonstração)
+
+<pre><code class="language-java">
 package com.example.biblioteca;
 
 import java.nio.file.Files;
@@ -443,9 +459,12 @@ public class Main {
         System.out.println("== Fim da demonstração ==");
     }
 }
-SalaDeAula.java
-Java
 
+</code></pre>
+
+## SalaDeAula.java
+
+<pre><code class="language-java">
 package com.example.biblioteca;
 
 import java.util.ArrayList;
@@ -470,8 +489,11 @@ public class SalaDeAula {
         return "SalaDeAula{nome='" + nome + "', alunos=" + alunos + "}";
     }
 }
+
+</code></pre>
+
 Usuario.java
-Java
+<pre><code class="language-java">
 
 package com.example.biblioteca;
 
@@ -488,12 +510,15 @@ public class Usuario {
     public String toString() { return "Usuario{nome='" + nome + "'}"; }
 }
 
+</code></pre>
+
 ## 8. 🤖 Atividade 8: Usando Ollama (Cliente HTTP em Java)
 
 Esta seção demonstra o uso de um cliente HTTP em Java para interagir diretamente com a API do servidor Ollama, que é usado para executar modelos de linguagem (LLMs) localmente.
 
 Ollama.java
-Java
+
+<pre><code class="language-java">
 
 import java.io.*;
 import java.net.*;
@@ -543,5 +568,6 @@ public class Ollama {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-}
+</code></pre>
+
+# FIM ENTREGA 1 - FERNANDO DOS SANTOS RIBEIRO - 2° SEMESTRE BD
